@@ -49,6 +49,15 @@
       "actor_id": 82163840,
       "issue_id": 5033483758,
       "issue_number": 5
+    },
+    {
+      "command": "move",
+      "coordinate": "A2",
+      "source": "issue",
+      "actor_login": "cnr-cbr",
+      "actor_id": 82163840,
+      "issue_id": 5033487280,
+      "issue_number": 6
     }
   ]
 }
