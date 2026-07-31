@@ -1,0 +1,67 @@
+name: README Go
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Owner operation
+        required: true
+        type: choice
+        options:
+          - initialize
+          - validate
+          - pause
+          - resume
+          - resign
+          - new-game
+      game-id:
+        description: Required by initialize, resign, and new-game
+        required: false
+        type: string
+      board-size:
+        description: Board size confirmation for initialize
+        required: false
+        type: choice
+        options:
+          - "9"
+          - "13"
+          - "19"
+      komi:
+        description: Komi confirmation for initialize
+        required: false
+        default: ""
+        type: string
+      confirm-color:
+        description: Color confirmation for resign
+        required: false
+        type: choice
+        options:
+          - black
+          - white
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: readme-go
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  readme-go:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Process README Go
+        uses: cnr-cbr/go-readme-sandbox@d857d4c0c19156fc7158edca0b15e690c7fc4664
+        with:
+          github-token: ${{ github.token }}
+          operation: >-
+            ${{ github.event_name == 'issues' && 'play' ||
+            inputs.operation }}
+          game-id: ${{ inputs.game-id }}
+          board-size: ${{ inputs.board-size }}
+          komi: ${{ inputs.komi }}
+          confirm-color: ${{ inputs.confirm-color }}
