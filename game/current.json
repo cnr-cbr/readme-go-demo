@@ -13,6 +13,15 @@
       "actor_id": 82163840,
       "issue_id": 5033707134,
       "issue_number": 18
+    },
+    {
+      "command": "move",
+      "coordinate": "G6",
+      "source": "issue",
+      "actor_login": "c3us-dev",
+      "actor_id": 209130198,
+      "issue_id": 5033710453,
+      "issue_number": 19
     }
   ]
 }
