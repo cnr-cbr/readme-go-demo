@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "game_id": "demo-001",
+  "ruleset": "readme-go-area-psk-v1",
+  "board_size": 9,
+  "komi": "7.5",
+  "moves": []
+}
