@@ -76,6 +76,14 @@
       "actor_id": 82163840,
       "issue_id": 5033557387,
       "issue_number": 12
+    },
+    {
+      "command": "pass",
+      "source": "issue",
+      "actor_login": "cnr-cbr",
+      "actor_id": 82163840,
+      "issue_id": 5033613918,
+      "issue_number": 15
     }
   ]
 }
