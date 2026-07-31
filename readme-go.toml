@@ -3,4 +3,4 @@ repository = "cnr-cbr/readme-go-demo"
 board_size = 9
 komi = "7.5"
 ruleset = "readme-go-area-psk-v1"
-accepting_moves = false
+accepting_moves = true
