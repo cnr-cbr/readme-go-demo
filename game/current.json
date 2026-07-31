@@ -166,6 +166,15 @@
       "actor_id": 82163840,
       "issue_id": 5034175562,
       "issue_number": 37
+    },
+    {
+      "command": "move",
+      "coordinate": "H8",
+      "source": "issue",
+      "actor_login": "c3us-dev",
+      "actor_id": 209130198,
+      "issue_id": 5034178192,
+      "issue_number": 38
     }
   ]
 }
