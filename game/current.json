@@ -4,5 +4,15 @@
   "ruleset": "readme-go-area-psk-v1",
   "board_size": 9,
   "komi": "7.5",
-  "moves": []
+  "moves": [
+    {
+      "command": "move",
+      "coordinate": "B3",
+      "source": "issue",
+      "actor_login": "cnr-cbr",
+      "actor_id": 82163840,
+      "issue_id": 5033438030,
+      "issue_number": 1
+    }
+  ]
 }
