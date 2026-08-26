@@ -220,6 +220,15 @@
       "actor_id": 209130198,
       "issue_id": 5257576788,
       "issue_number": 43
+    },
+    {
+      "command": "move",
+      "coordinate": "D3",
+      "source": "issue",
+      "actor_login": "c3us-dev",
+      "actor_id": 209130198,
+      "issue_id": 5257751223,
+      "issue_number": 44
     }
   ]
 }
